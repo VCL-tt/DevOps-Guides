@@ -96,6 +96,7 @@
       ```bash
       eksctl create cluster --name mi-cluster-mumbai --region ap-south-1 --node-type t2.micro --zones ap-south-1a,ap-south-1b
 3. Eliminar cluster
+   ```bash
    - eksctl delete cluster --name <nombre-del-cluster> --region <region>
 
 
