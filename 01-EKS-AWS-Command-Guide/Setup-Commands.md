@@ -82,21 +82,20 @@
 
    Para crear un clúster EKS, ejecuta el siguiente comando:
    ```bash
-   eksctl create cluster --name <nombre-del-cluster> --region <nombre-de-la-region> --node-type <tipo-de-instancia> --nodes-min 2 --nodes-max 2 --zones <zonas-de-disponibilidad>
+   eksctl create cluster --name <nombre-del-cluster> --region <nombre-de-la-region> --node-type <tipo-de-instancia> --zones <zonas-de-disponibilidad>
+   
 2. Ejemplos clúster:
     
    - Ejemplo para Virginia del Norte (us-east-1):
       ```bash
-     eksctl create cluster --name mi-cluster-virginia --region us-east-1 --node-type t2.micro --nodes-min 2 --nodes-max 2 --zones us-east-1a,us-east-1b
+      eksctl create cluster --name mi-cluster-virginia --region us-east-1 --node-type t2.micro --zones us-east-1a,us-east-1b
     - Ejemplo para  Ohio (us-east-2):
       ```bash
-      eksctl create cluster --name mi-cluster-ohio --region us-east-2 --node-type t2.micro --nodes-min 2 --nodes-max 2 --zones us-east-2a,us-east-2b
+      eksctl create cluster --name mi-cluster-ohio --region us-east-2 --node-type t2.micro --zones us-east-2a,us-east-2b
     - Ejemplo para Mumbai (ap-south-1):
       ```bash
-      eksctl create cluster --name mi-cluster-mumbai --region ap-south-1 --node-type t2.micro --nodes-min 2 --nodes-max 2 --zones ap-south-1a,ap-south-1b
-    - Ejemplo para Europa (Irlanda - eu-west-1):
-      ```bash
-      eksctl create cluster --name mi-cluster-europa --region eu-west-1 --node-type t2.micro --nodes-min 2 --nodes-max 2 --zones eu-west-1a,eu-west-1b
-    - Ejemplo para Sídney (ap-southeast-2):
-      ```bash
-      eksctl create cluster --name mi-cluster-sidney --region ap-southeast-2 --node-type t2.micro --nodes-min 2 --nodes-max 2 --zones ap-southeast-2a,ap-southeast-2b
+      eksctl create cluster --name mi-cluster-mumbai --region ap-south-1 --node-type t2.micro --zones ap-south-1a,ap-south-1b
+3. Eliminar cluster
+   - eksctl delete cluster --name <nombre-del-cluster> --region <region>
+
+
