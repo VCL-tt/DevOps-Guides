@@ -85,18 +85,11 @@
    eksctl create cluster --name <nombre-del-cluster> --region <nombre-de-la-region> --node-type <tipo-de-instancia> --zones <zonas-de-disponibilidad>
    
 2. Ejemplos clúster:
-    
-   - Ejemplo para Virginia del Norte (us-east-1):
-      ```bash
-      eksctl create cluster --name mi-cluster-virginia --region us-east-1 --node-type t2.micro --zones us-east-1a,us-east-1b
     - Ejemplo para  Ohio (us-east-2):
       ```bash
-      eksctl create cluster --name mi-cluster-ohio --region us-east-2 --node-type t2.micro --zones us-east-2a,us-east-2b
-    - Ejemplo para Mumbai (ap-south-1):
-      ```bash
-      eksctl create cluster --name mi-cluster-mumbai --region ap-south-1 --node-type t2.micro --zones ap-south-1a,ap-south-1b
+      eksctl create cluster --name ashokit-cluster4 --region us-east-1 --node-type t2.medium --zones us-east-1a,us-east-1b
 3. Eliminar cluster
    ```bash
-   - eksctl delete cluster --name <nombre-del-cluster> --region <region>
+   eksctl delete cluster --name <nombre-del-cluster> --region <region>
 
 
